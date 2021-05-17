@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "rm -rf ../dist && parcel build index.js --no-source-maps -o trust-min.js -d ../dist",
+    "build:debug": "parcel build index.js --no-minify -o trust.js -d ../dist",
     "build:android": "rm -rf $npm_package_android_dist/trust.js && mkdir -pv $npm_package_android_dist && parcel build index.js --no-source-maps -o trust.js -d $npm_package_android_dist",
     "watch": "rm -rf ../dist && parcel watch index.js -o trust-min.js -d ../dist",
     "lint": "eslint . --fix",
